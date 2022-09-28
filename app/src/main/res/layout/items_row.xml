@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMain"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -28,7 +29,7 @@
         android:id="@+id/ivEdit"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_margin="3dp"
+        android:padding="10dp"
         android:src="@drawable/ic_action_edit"
         android:contentDescription="@string/image_description"
         />
@@ -36,7 +37,7 @@
         android:id="@+id/ivDelete"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_margin="3dp"
+        android:padding="10dp"
         android:src="@drawable/ic_action_delete"
         android:contentDescription="@string/image_description"
         />

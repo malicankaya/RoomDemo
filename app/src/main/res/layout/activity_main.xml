@@ -14,8 +14,9 @@
         android:text="Name"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@id/etName"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/etName"
+        app:layout_constraintBottom_toTopOf="@id/tvEmailID"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <EditText
         android:id="@+id/etName"
@@ -34,6 +35,7 @@
         android:text="E-mail ID"
         android:textColor="@color/black"
         android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
         app:layout_constraintBottom_toBottomOf="@id/etEmailID"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -72,7 +74,11 @@
         android:layout_marginTop="10dp"
         android:visibility="invisible"
         app:layout_constraintTop_toBottomOf="@id/tvInsertedRecords"
-        tools:visibility="visible" />
+        tools:visibility="visible"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/items_row"
+        />
 
     <TextView
         android:id="@+id/tvNoRecordsAvailable"
